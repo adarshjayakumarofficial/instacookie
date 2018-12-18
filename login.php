@@ -1,5 +1,5 @@
 <?php
-$data=array('by'=>'indotagram.com',
+$data=array('by'=>'adarsh-official.tk',
            'url'=>'http://www.indotagram.com/users/getData',
             );
 
