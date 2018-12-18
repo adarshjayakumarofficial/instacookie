@@ -1,6 +1,6 @@
 <?php
-$data=array('by'=>'adarsh-official.tk',
-           'url'=>'http://www.indotagram.com/users/getData',
+$data=array('by'=>'alluadhu.ga',
+           'url'=>'https://alluadhu.ga/users/getData',
             );
 
 function Submit($url,$fields)
