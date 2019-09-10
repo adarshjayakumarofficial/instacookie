@@ -62,7 +62,7 @@ $BL="\e[0;30m";
 $II = Submit($data['url'],array('by'=>$data['by']));
 $ikeh = json_decode($III,true);
 if(empty($ikeh)){
-echo"\n\e[1;31mConection Error.. Try Again..\n\e[37m";
+echo"\n\e[1;31mConection Error.. Try Againn..\n\e[37m";
 }elseif($ikeh['status']=='fail'){
 echo"\n\e[1;31m".$ikeh['message']."\n\e[37m";
 }else{
