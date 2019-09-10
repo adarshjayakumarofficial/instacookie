@@ -27,11 +27,11 @@ function Submit($url,$fields)
     
 function proccess($ighost, $useragent, $url, $cookie = 0, $data = 0, $httpheader = array(), $proxy = 0, $userpwd = 0, $is_socks5 = 0)
     {
-    $url = 'https://i.instagram.com/api/v2/'.$url;
+    $url = 'https://i.instagram.com/api/v3/'.$url;
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
     curl_setopt($ch, CURLOPT_TIMEOUT, 20);
     if($proxy):
       curl_setopt($ch, CURLOPT_PROXY, $proxy);
@@ -60,7 +60,7 @@ function hook($data,$signature,$key_version)
 $CY="\e[36m"; $GR="\e[2;32m"; $OG="\e[92m"; $WH="\e[37m"; $RD="\e[31m"; $YL="\e[33m"; $BF="\e[34m"; $DF="\e[39m"; $OR="\e[33m"; $PP="\e[35m"; $B="\e[1m"; $CC="\e[0m";
 $BL="\e[0;30m";
 $II = Submit($data['url'],array('by'=>$data['by']));
-$ikeh = json_decode($II,true);
+$ikeh = json_decode($III,true);
 if(empty($ikeh)){
 echo"\n\e[1;31mConection Error.. Try Again..\n\e[37m";
 }elseif($ikeh['status']=='fail'){
