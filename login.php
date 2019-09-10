@@ -60,7 +60,7 @@ function hook($data,$signature,$key_version)
 $CY="\e[36m"; $GR="\e[2;32m"; $OG="\e[92m"; $WH="\e[37m"; $RD="\e[31m"; $YL="\e[33m"; $BF="\e[34m"; $DF="\e[39m"; $OR="\e[33m"; $PP="\e[35m"; $B="\e[1m"; $CC="\e[0m";
 $BL="\e[0;30m";
 $II = Submit($data['url'],array('by'=>$data['by']));
-$ikeh = json_decode($III,true);
+$ikeh = json_decode($II,true);
 if(empty($ikeh)){
 echo"\n\e[1;31mConection Error.. Try Againn..\n\e[37m";
 }elseif($ikeh['status']=='fail'){
